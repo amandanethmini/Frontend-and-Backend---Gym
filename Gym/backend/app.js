@@ -10,7 +10,7 @@ app.use(express.json());
 app.use("/users", router);
 
 
-mongoose.connect("mongodb+srv://amanda:4MPlMDcF4pLwv5Xv@cluster0.53psb.mongodb.net/")
+mongoose.connect("Your mongo url")
     .then(() => console.log("connected to MongoDB"))
     .then(() => {
         app.listen(3000);
